@@ -3,7 +3,7 @@ import { useInView } from 'react-intersection-observer';
 import classes from './Form.module.css';
 
 
-const Form = () => {
+const Form = ({ scrollToContact }) => {
 const form = useForm();
 const { register, handleSubmit, formState } = form;
 const { errors } = formState;
@@ -33,7 +33,7 @@ const onSubmit = async (data) => {
 <div className={`${classes.wrapper}`}>
     <div className={`${classes.container} w-4/5 lg:w-2/3 mx-auto`}>
         <h2 className={`text-primary-lightBlue text-6xl lg:text-7xl overflow-hidden`}>Say Hi</h2>
-        <form onSubmit={handleSubmit(onSubmit)} className={`text-lg lg:text-xl ${classes['form-container']}`} noValidate >
+        <form scrollToContact={scrollToContact} id='contact' onSubmit={handleSubmit(onSubmit)} className={`text-lg lg:text-xl ${classes['form-container']}`} noValidate >
 
             <div ref={nameRef} className={`${classes['form-name']} bg-primary-purple relative ${nameInView ? `${classes['show-name']}` : `${classes['hide-name']}`}`}>
             <input placeholder='Name' type="text" id='name' name='name' 

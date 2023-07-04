@@ -3,7 +3,7 @@ import classes from './Projects.module.css';
 const Projects = () => {
     return (
         <div className={`${classes.projects} bg-primary-purple text-3xl lg:text-6xl`}>
-        <h2 className={`${classes.heading} overflow-hidden text-primary-Pink text-3xl lg:text-7xl`}>Projects</h2>
+        <h2 className={`${classes.heading} overflow-hidden text-primary-Pink text-2xl lg:text-5xl`}>Projects</h2>
         <div className={`${classes.box}`}>
             <span className={`${classes.span}`}>
             <span>CMS&nbsp;Tech&nbsp;Blog&nbsp;</span>

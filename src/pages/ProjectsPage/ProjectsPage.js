@@ -1,7 +1,7 @@
 import classes from './ProjectsPage.module.css';
 import { useInView } from 'react-intersection-observer';
 
-const ProjectsPage = () => {
+const ProjectsPage = ({ scrollToProjects }) => {
     const {ref: blogRef, inView: blogInView} = useInView();
     const {ref: jobsRef, inView: jobsInView} = useInView();
     const {ref: plannerRef, inView: plannerInView} = useInView();
@@ -9,12 +9,12 @@ const ProjectsPage = () => {
 
 
   return (
-<div className={`${classes.container}`}>
+<div scrollToProjects={scrollToProjects} id='projects' className={`${classes.container}`}>
     <div className={`${classes.main}`}>
         <div ref={blogRef} className={`overflow-hidden p-4 ${classes.blog} ${blogInView ? `${classes['show-blog']}` : `${classes['hide-blog']}`}`}>
             <div className={`${classes.wrapper} bg-primary-purple`}>
                 <div className={`${classes.links} px-8 text-md lg:text-2xl  bg-primary-purple`}>
-                    <a className='hover:cursor-pointer hover:opacity-70' href="/">
+                    <a className='hover:cursor-pointer hover:opacity-70' href="https://github.com/Travisnicholson90/tech-blog" target='blank'>
                     <p className='text-primary-pink'>GitHub</p>
                     </a>
                     <a className='hover:cursor-pointer' href="https://tech-blog-usyd.herokuapp.com/" target='blank' >
@@ -52,7 +52,7 @@ const ProjectsPage = () => {
         <div ref={jobsRef} className={`overflow-hidden p-4  ${classes.jobs} bg-primary-darkGreen ${jobsInView ? `${classes['show-jobs']}` : `${classes['hide-jobs']}`}`}>
         <div className={`${classes.wrapper} bg-primary-darkGreen`}>
                 <div className={`${classes.links} px-8 text-md lg:text-2xl  bg-primary-darkGreen`}>
-                    <a className='hover:cursor-pointer' href="/">
+                    <a className='hover:cursor-pointer' href="https://github.com/Travisnicholson90/job-board" target='blank'>
                     <p className='text-primary-lime'>GitHub</p>
                     </a>
                     <a className='hover:cursor-pointer' href="/">
@@ -129,7 +129,7 @@ const ProjectsPage = () => {
     <div ref={shoesRef} className={`overflow-hidden p-4  ${classes.planner} bg-primary-darkBlue ${shoesInView ? `${classes['show-shoes']}` : `${classes['hide-shoes']}`}`}>
         <div className={`${classes.wrapper} bg-primary-darkBlue`}>
                 <div className={`${classes.links} px-8 text-md lg:text-2xl  bg-primary-darkBlue`}>
-                <a className='hover:cursor-pointer' href="/">
+                <a className='hover:cursor-pointer' href="https://github.com/Travisnicholson90/quiz-api" target='blank'>
                     <p className='text-primary-lightBlue'>GitHub</p>
                     </a>
                     <a className='hover:cursor-pointer' href="/">

@@ -3,7 +3,7 @@ import classes from './Skills.module.css';
 const Skills = () => {
     return (
         <div className={`${classes.skills} bg-primary-grayishWhite text-primary-neonPeach text-3xl lg:text-6xl`}>
-        <h2 className={`${classes.heading} overflow-hidden text-primary-neonPeach text-3xl lg:text-7xl`}>Skills</h2>
+        <h2 className={`${classes.heading} overflow-hidden text-primary-neonPeach text-2xl lg:text-5xl`}>Skills</h2>
         <div className={`${classes.box}`}>
             <span className={`${classes.span}`}>
             <span>JavaScript&nbsp;&nbsp;</span>
