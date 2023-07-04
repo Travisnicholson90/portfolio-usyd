@@ -1,0 +1,57 @@
+
+.projects {
+    position: relative;
+    display: flex;
+    min-width: 100%;
+    min-height: 100%;
+    border-radius: 75px;
+    color: #febce8;
+    overflow: hidden;
+}
+
+.heading {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    background: none;
+}
+
+.projects:hover {
+    cursor: pointer;
+}
+
+.box {
+    align-self: center;
+    background: none;
+    display: none;
+}
+
+.span {
+    display: inline-block;
+    background: none;
+}
+
+.span span {
+    background: none;
+    margin: 0 3rem;
+}
+
+.projects:hover .box {
+    animation: slide 14s linear infinite;
+    display: block;
+}
+
+.projects:hover .heading {
+    display: none;
+}
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

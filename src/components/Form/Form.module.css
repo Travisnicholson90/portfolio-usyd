@@ -1,0 +1,171 @@
+.wrapper {
+    height: 100vh;
+    max-width: 100vw;
+    margin-inline: auto;
+}
+
+@media only screen and (max-width: 360px) {  
+    .wrapper {
+        max-width: 90vw;
+    }
+} 
+
+.container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    width: 100%;
+    justify-content: center;
+}
+
+.form-name * {
+    background-color: #700B97;
+}
+
+.form-message * {
+    background-color: #DFDFDE;
+}
+
+.form-email * {
+    background-color: #064635;
+}
+
+.form-name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 55px;
+    padding: 1rem 2rem;
+}
+.form-email {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 55px;
+    padding: 1rem 2rem;
+}
+.form-message {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 55px;
+    padding: 1rem 2rem;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 55px;
+    padding: 1rem 2rem;
+}
+
+.form-message textarea {
+    outline: none;
+    color: #FA9494;
+}
+
+.form-name input {
+    outline: none;
+    width: 100%;
+    color: #D4ADFC;
+} 
+.form-email input {
+    outline: none;
+    width: 100%;
+    color: #B4FE98;
+}
+
+.form-name input::placeholder {
+    font-size: clamp(1rem, 2.5vw, 2rem);
+    color: #D4ADFC;
+} 
+
+.form-email input::placeholder {
+    font-size: clamp(1rem, 2.5vw, 2rem);
+    color: #B4FE98;
+} 
+
+.form-message textarea::placeholder {
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    width: 100%;
+    color: #FF6464;
+}
+
+
+.show-name {
+    opacity: 1;
+    transition: ease-in-out 1s;
+}
+
+.hide-name {
+    opacity: 0;
+    transition: ease-in-out 1s;
+}
+
+.show-email {
+    opacity: 1;
+    transition: ease-in-out 1s;
+}
+
+.hide-email {
+    opacity: 0;
+    transition: ease-in-out 1s;
+}
+
+.show-text {
+    opacity: 1;
+    transition: ease-in-out 1s;
+}
+
+.hide-text {
+    opacity: 0;
+    transition: ease-in-out 1s;
+}
+
+.show-btn {
+    opacity: 1;
+    transition: ease-in-out 1s;
+}
+
+.hide-btn {
+    opacity: 0;
+    transition: ease-in-out 1s;
+}
+
+@media only screen and (min-width: 950px) {
+    .form-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .form-message {
+        grid-column: 1 / 2;
+        grid-row: 1 / -1;
+    }
+
+    .form-name {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .form-email {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    .btn {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+}
