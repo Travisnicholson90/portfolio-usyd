@@ -23,7 +23,7 @@ Write a description of the project.
 ## Usage
 
 ### Screenshot
-![](./src/assets/images/portfolio.png)
+![](./src/assets/images/screenshot.png)
 
 ## Built with
 ### Programming Languages
