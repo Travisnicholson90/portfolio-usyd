@@ -15,7 +15,7 @@ const Contact = () => {
                 <a className='w-full' href='https://github.com/Travisnicholson90'>
                     <img className={`w-8 lg:w-10 ${classes.icon}`} src={github} alt="icon" />
                 </a>
-                <a onClick={scrollToContact} className='w-full' href='#contact'>
+                <a onClick={scrollToContact} className='w-full' href='/'>
                     <img className={`w-8 lg:w-10 ${classes.icon}`} src={mail} alt="icon" />
                 </a>
                 <a className='w-full' href='https://www.linkedin.com/in/travis-nicholson-91787484/'>
