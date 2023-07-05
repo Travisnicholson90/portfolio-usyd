@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/portfolio-usyd/static/css/main.d4d7e37e.css",
+    "main.js": "/portfolio-usyd/static/js/main.ce63779e.js",
+    "static/js/787.1ed0c42c.chunk.js": "/portfolio-usyd/static/js/787.1ed0c42c.chunk.js",
+    "static/media/nicholson-resume.pdf": "/portfolio-usyd/static/media/nicholson-resume.cc0d2f3b8f5e82139fee.pdf",
+    "static/media/linkedin.svg": "/portfolio-usyd/static/media/linkedin.c35dcf2cbca195e67dc891a97d3d372b.svg",
+    "static/media/github.svg": "/portfolio-usyd/static/media/github.593b4701750dd440a76c936b7195170c.svg",
+    "static/media/mail.svg": "/portfolio-usyd/static/media/mail.2b37b9e448874dcda7e9c67b2eda909d.svg",
+    "index.html": "/portfolio-usyd/index.html",
+    "main.d4d7e37e.css.map": "/portfolio-usyd/static/css/main.d4d7e37e.css.map",
+    "main.ce63779e.js.map": "/portfolio-usyd/static/js/main.ce63779e.js.map",
+    "787.1ed0c42c.chunk.js.map": "/portfolio-usyd/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d4d7e37e.css",
+    "static/js/main.ce63779e.js"
+  ]
+}
