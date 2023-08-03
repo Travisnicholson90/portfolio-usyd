@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import resume from '../../assets/nicholson-resume.pdf';
+import resume from '../../assets/nicholson-resume.docx';
+
 import github from '../../assets/images/github.svg';
 import mail from '../../assets/images/mail.svg';
 import linkedin from '../../assets/images/linkedin.svg';
