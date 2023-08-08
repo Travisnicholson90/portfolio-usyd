@@ -1,9 +1,11 @@
+import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { useInView } from 'react-intersection-observer';
 import classes from './Form.module.css';
 
 
 const Form = ({ scrollToContact }) => {
+const [ contactSuccess, setContactSuccess ] = useState(true);
 const form = useForm();
 const { register, handleSubmit, formState } = form;
 const { errors } = formState;
@@ -24,6 +26,7 @@ const onSubmit = async (data) => {
     });
     if (response.status === 200) {
       console.log('success');
+      setContactSuccess(true);
     } else {
       console.log('error');
     }
@@ -65,6 +68,9 @@ const onSubmit = async (data) => {
             </div>
             <button ref={btnRef} className={`${classes.btn} bg-primary-darkBlue text-primary-lightBlue text-xl lg:text-2xl uppercase tracking-wider font-bold ${btnInView ? `${classes['show-btn']}` : `${classes['hide-btn']}`}`}>Submit</button>
         </form>
+         {contactSuccess && (
+          <p className='text-green-500 text-2xl font-bold'>Thank you for reaching out!</p>
+        )}   
     </div>
 </div>
     )
