@@ -13,12 +13,12 @@ const Contact = () => {
             <h2 className={`me-3 overflow-hidden ${classes.heading} bg-primary-darkGreen text-lime`}>Contact</h2>
             <div className={`${classes.icons} bg-primary-darkGreen`}>
                 <a className='w-full' href='https://github.com/Travisnicholson90'>
-                    <img className={`w-8 lg:w-10 ${classes.icon}`} src={github} alt="icon" />
+                    <img className={`w-8 lg:w-10 ${classes.icon}`} src={github} alt="icon" target='blank'/>
                 </a>
                 <a onClick={scrollToContact} className='w-full' href='/'>
                     <img className={`w-8 lg:w-10 ${classes.icon}`} src={mail} alt="icon" />
                 </a>
-                <a className='w-full' href='https://www.linkedin.com/in/travis-nicholson-91787484/'>
+                <a className='w-full' href='https://www.linkedin.com/in/travis-nicholson-91787484/' target='blank'>
                     <img className={`w-8 lg:w-10 ${classes.icon}`} src={linkedin} alt="icon" />
                 </a>
             </div>
