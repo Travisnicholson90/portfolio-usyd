@@ -7,17 +7,17 @@ const Projects = () => {
         <div className={`${classes.box}`}>
             <span className={`${classes.span}`}>
             <span>CMS&nbsp;Tech&nbsp;Blog&nbsp;</span>
-            <span>Local&nbsp;Jobs&nbsp;Board&nbsp;</span>
-            <span>Web&nbsp;Dev&nbsp;Quiz&nbsp;</span>
-            <span>Planner&nbsp;Application&nbsp;</span>
+            <span>Google&nbsp;Book&nbsp;Search&nbsp;</span>
+            <span>TechStack&nbsp;Quiz&nbsp;&nbsp;</span>
+            <span>Kickz&nbsp;ecommerce&nbsp;</span>
             </span>
         </div>
         <div className={`${classes.box}`}>
             <span className={`${classes.span}`}>
             <span>CMS&nbsp;Tech&nbsp;Blog&nbsp;</span>
-            <span>Local&nbsp;Jobs&nbsp;Board&nbsp;</span>
+            <span>Google&nbsp;Book&nbsp;Search&nbsp;</span>
             <span>Web&nbsp;Dev&nbsp;Quiz&nbsp;</span>
-            <span>Planner&nbsp;Application&nbsp;</span>
+            <span>Kickz&nbsp;ecommerce&nbsp;</span>
             </span>
         </div>
         
