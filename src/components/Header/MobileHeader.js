@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import classes from '../../layouts/rootLayout.module.css';
-import resume from '../../assets/nicholson-resume.docx';
+import resume from '../../assets/nicholson-resume.pdf';
 
 const MobileHeader = () => {
     const [showNav, setShowNav] = useState(false);

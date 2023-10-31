@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import resume from '../../assets/nicholson-resume.docx';
+import resume from '../../assets/nicholson-resume.pdf';
 
 const Header = () => {
     const [showNav, setShowNav] = useState(false);
